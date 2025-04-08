@@ -9,16 +9,21 @@ import adoptionsRouter from './routes/adoption.router.js';
 import sessionsRouter from './routes/sessions.router.js';
 import mocksRouter from './routes/mocks.router.js'; 
 
-// Cargar variables de entorno
+// Variables de entorno
 dotenv.config();
 
+
+// Inicialización del Express app
 const app = express();
 const PORT = process.env.PORT || 8080;
 const connection = process.env.MONGODB_URL;
 
+
+// Middleware
 app.use(express.json());
 app.use(cookieParser());
 
+// Rutas
 app.use('/api/users',usersRouter);
 app.use('/api/pets',petsRouter);
 app.use('/api/adoptions',adoptionsRouter);

@@ -42,4 +42,5 @@ Este proyecto utiliza las siguientes dependencias:
     "nodemon": "^3.1.9"
   }
 ```
-git clone 
+git clone https://github.com/neptunonet/Backend_3_PreEntrega_JuanArmas.git
+
